@@ -215,21 +215,21 @@ def encode(plaintext):
 print("  ##### Enigma Encoder #####")
 print("")
 filename = input("write the name of the file ")
-file = open("Text.txt", "r")
+file = open(filename, "r")
 d = file.read()
 textFile = d
-
 printext = textFile
-
 ciphertext = encode(textFile)
-print("\nyour Encoded text: \n " + ciphertext)
-
 f = open("textencript", "w")
 plaintext = textFile
-#
 ciphertext = encode(plaintext)
-
-
 f.write(ciphertext)
 print("\nfile Encoded text: \n " + ciphertext)
+################################################
+print("#########################################")
+plaintext=input("write some text")
+cliptext = encode(plaintext)
+print(cliptext)
+
+
 
